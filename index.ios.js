@@ -32,13 +32,7 @@ var listView = React.createClass({
                     type: "easeInEaseOut"
                 }
         });
-
-        this.setState({
-            menu: {
-                right: this.state.menu.right > -150 ? -150 : 0
-            }
-        });
-
+        
         var wrapperOverlayOpacity = 0.8;
         var sidebarRight = 0;
         if (this.state.menu.right > -150) {
