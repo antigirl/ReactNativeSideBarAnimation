@@ -19,9 +19,8 @@ var Main = React.createClass({
     },
     goToSettings: function() {
         this.props.navigator.push({
-        sceneConfig: Navigator.SceneConfigs.FloatFromBottom,
-        component: Settings,
-        title: 'Settings'
+            name: 'settings',
+            sceneConfig: Navigator.SceneConfigs.FloatFromBottom
         });
     },
     toggleSideBar: function() {
